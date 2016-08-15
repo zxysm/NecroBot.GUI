@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PokeGUI));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Tangela", 114);
             this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             this.menuExit = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem();
             this.kryptonDockingManager = new ComponentFactory.Krypton.Docking.KryptonDockingManager();
@@ -44,8 +45,8 @@
             this.kryptonPage9 = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.btnRefresh = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.listPokemon = new System.Windows.Forms.ListView();
-            this.pokeId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pokeName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pokeId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cpMax = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cpPrnct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -55,37 +56,83 @@
             this.candy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnExtra = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.systemId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnMove1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnMove2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnCaught = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextPokemon = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.evolveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.powerUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStatisticsPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.favoriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imagesPokemon25 = new System.Windows.Forms.ImageList(this.components);
             this.kryptonPage2 = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.labelPokemon = new System.Windows.Forms.Label();
+            this.listCatches = new System.Windows.Forms.ListView();
+            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.kryptonPage1 = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.labelTransfers = new System.Windows.Forms.Label();
+            this.listTransfers = new System.Windows.Forms.ListView();
+            this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.kryptonPage7 = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.labelEvolves = new System.Windows.Forms.Label();
+            this.listEvolutions = new System.Windows.Forms.ListView();
+            this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.kryptonWorkspaceSequence2 = new ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence();
             this.kryptonWorkspaceCell2 = new ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage4 = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.labelNext = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
-            this.labelStops = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
-            this.kryptonPage3 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.listPokestops = new System.Windows.Forms.ListView();
+            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.kryptonWorkspaceCell3 = new ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage10 = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.listInv = new System.Windows.Forms.ListView();
             this.itemName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.itemCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.itemMax = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextInventory = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.disposechooseAmountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kryptonPage13 = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.listEggs = new System.Windows.Forms.ListView();
             this.imagesEgg = new System.Windows.Forms.ImageList(this.components);
             this.kryptonWorkspaceCell5 = new ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage6 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.btnClearLogs = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.textLog = new System.Windows.Forms.RichTextBox();
             this.kryptonWorkspaceCell6 = new ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell();
             this.kryptonPage11 = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.webMap = new System.Windows.Forms.WebBrowser();
+            this.kryptonPage5 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.listPokemonStats = new System.Windows.Forms.ListView();
+            this.iamgesPokemon100 = new System.Windows.Forms.ImageList(this.components);
+            this.kryptonPage16 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pageLogging = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.ribbonMain = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
             this.kryptonRibbonTab2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
@@ -117,11 +164,36 @@
             this.labelEvolvable = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupButton5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupButton6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelPokemonCount = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelItemCount = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelEggCount = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupTriple4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelPokedex = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple15 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.labelNext = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelUpdate = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelUpdate2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.saveWorkspace = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.loadWorkspace = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple13 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.labelCOD = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupSeparator1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupTriple14 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.labelCODCP = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelCODIV = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.labelCODLevel = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.snipeButton = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.useIncenseButton = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.useLuckyEgg = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonTab1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonRibbonGroup1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
@@ -133,6 +205,9 @@
             this.tabSettings = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
             this.kryptonPage14 = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.kryptonPage15 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.powerUpMAXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell4)).BeginInit();
             this.kryptonWorkspaceCell4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage8)).BeginInit();
@@ -154,11 +229,11 @@
             this.kryptonWorkspaceCell2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage4)).BeginInit();
             this.kryptonPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell3)).BeginInit();
             this.kryptonWorkspaceCell3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage10)).BeginInit();
             this.kryptonPage10.SuspendLayout();
+            this.contextInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage13)).BeginInit();
             this.kryptonPage13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell5)).BeginInit();
@@ -169,6 +244,12 @@
             this.kryptonWorkspaceCell6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage11)).BeginInit();
             this.kryptonPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage5)).BeginInit();
+            this.kryptonPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage16)).BeginInit();
+            this.kryptonPage16.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pageLogging)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage14)).BeginInit();
@@ -242,7 +323,7 @@
             this.workspaceDashboard.Root.UniqueName = "FA861B91B6D840B5ACA272DCFFDE0787";
             this.workspaceDashboard.Root.WorkspaceControl = this.workspaceDashboard;
             this.workspaceDashboard.ShowMaximizeButton = false;
-            this.workspaceDashboard.Size = new System.Drawing.Size(1164, 631);
+            this.workspaceDashboard.Size = new System.Drawing.Size(1588, 631);
             this.workspaceDashboard.TabIndex = 0;
             this.workspaceDashboard.TabStop = true;
             this.workspaceDashboard.WorkspaceCellAdding += new System.EventHandler<ComponentFactory.Krypton.Workspace.WorkspaceCellEventArgs>(this.workspaceDashboard_WorkspaceCellAdding);
@@ -282,7 +363,7 @@
             this.kryptonPage9.LastVisibleSet = true;
             this.kryptonPage9.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage9.Name = "kryptonPage9";
-            this.kryptonPage9.Size = new System.Drawing.Size(696, 273);
+            this.kryptonPage9.Size = new System.Drawing.Size(951, 273);
             this.kryptonPage9.Text = "Pokemon";
             this.kryptonPage9.ToolTipTitle = "Page ToolTip";
             this.kryptonPage9.UniqueName = "A45B609C7A9C45D89396C8613378EDC4";
@@ -298,8 +379,8 @@
             // 
             this.listPokemon.AllowColumnReorder = true;
             this.listPokemon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.pokeId,
             this.pokeName,
+            this.pokeId,
             this.CP,
             this.cpMax,
             this.cpPrnct,
@@ -308,30 +389,45 @@
             this.evolve,
             this.candy,
             this.columnExtra,
-            this.systemId});
+            this.systemId,
+            this.columnMove1,
+            this.columnMove2,
+            this.columnCaught,
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11});
             this.listPokemon.ContextMenuStrip = this.contextPokemon;
             this.listPokemon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listPokemon.FullRowSelect = true;
             this.listPokemon.GridLines = true;
             this.listPokemon.Location = new System.Drawing.Point(0, 0);
-            this.listPokemon.MultiSelect = false;
             this.listPokemon.Name = "listPokemon";
-            this.listPokemon.Size = new System.Drawing.Size(696, 273);
+            this.listPokemon.Size = new System.Drawing.Size(951, 273);
+            this.listPokemon.SmallImageList = this.imagesPokemon25;
             this.listPokemon.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listPokemon.TabIndex = 7;
             this.listPokemon.UseCompatibleStateImageBehavior = false;
             this.listPokemon.View = System.Windows.Forms.View.Details;
             this.listPokemon.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listPokemon_ColumnClick);
             // 
-            // pokeId
-            // 
-            this.pokeId.Text = "Id";
-            // 
             // pokeName
             // 
             this.pokeName.Tag = "pokeName";
             this.pokeName.Text = "Name";
             this.pokeName.Width = 141;
+            // 
+            // pokeId
+            // 
+            this.pokeId.Text = "Id";
+            this.pokeId.Width = 87;
             // 
             // CP
             // 
@@ -376,7 +472,7 @@
             // 
             this.columnExtra.Tag = "extra";
             this.columnExtra.Text = "Extra";
-            this.columnExtra.Width = 212;
+            this.columnExtra.Width = 50;
             // 
             // systemId
             // 
@@ -384,108 +480,446 @@
             this.systemId.Text = "systemId";
             this.systemId.Width = 10;
             // 
+            // columnMove1
+            // 
+            this.columnMove1.Text = "Move 1";
+            this.columnMove1.Width = 118;
+            // 
+            // columnMove2
+            // 
+            this.columnMove2.Text = "Move 2";
+            this.columnMove2.Width = 109;
+            // 
+            // columnCaught
+            // 
+            this.columnCaught.Text = "Caught on";
+            this.columnCaught.Width = 130;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Height";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Weight";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "HP";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Upgrades";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Attack";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Defense";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Stamina";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Favorite";
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Attacked";
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Defended";
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "DeployedAt";
+            // 
             // contextPokemon
             // 
             this.contextPokemon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.evolveToolStripMenuItem,
             this.transferToolStripMenuItem,
-            this.powerUpToolStripMenuItem});
+            this.powerUpToolStripMenuItem,
+            this.powerUpMAXToolStripMenuItem,
+            this.renameToolStripMenuItem,
+            this.addStatisticsPageToolStripMenuItem,
+            this.favoriteToolStripMenuItem});
             this.contextPokemon.Name = "contextPokemon";
             this.contextPokemon.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextPokemon.Size = new System.Drawing.Size(126, 70);
+            this.contextPokemon.Size = new System.Drawing.Size(174, 180);
             // 
             // evolveToolStripMenuItem
             // 
             this.evolveToolStripMenuItem.Name = "evolveToolStripMenuItem";
-            this.evolveToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.evolveToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.evolveToolStripMenuItem.Text = "&Evolve";
             this.evolveToolStripMenuItem.Click += new System.EventHandler(this.evolveToolStripMenuItem_Click);
             // 
             // transferToolStripMenuItem
             // 
             this.transferToolStripMenuItem.Name = "transferToolStripMenuItem";
-            this.transferToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.transferToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.transferToolStripMenuItem.Text = "&Transfer";
             this.transferToolStripMenuItem.Click += new System.EventHandler(this.transferToolStripMenuItem_Click);
             // 
             // powerUpToolStripMenuItem
             // 
             this.powerUpToolStripMenuItem.Name = "powerUpToolStripMenuItem";
-            this.powerUpToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.powerUpToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.powerUpToolStripMenuItem.Text = "&Power Up";
             this.powerUpToolStripMenuItem.Click += new System.EventHandler(this.powerUpToolStripMenuItem_Click);
+            // 
+            // renameToolStripMenuItem
+            // 
+            this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.renameToolStripMenuItem.Text = "Rename";
+            this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
+            // 
+            // addStatisticsPageToolStripMenuItem
+            // 
+            this.addStatisticsPageToolStripMenuItem.Name = "addStatisticsPageToolStripMenuItem";
+            this.addStatisticsPageToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.addStatisticsPageToolStripMenuItem.Text = "Add statistics page";
+            this.addStatisticsPageToolStripMenuItem.Visible = false;
+            this.addStatisticsPageToolStripMenuItem.Click += new System.EventHandler(this.addStatisticsPageToolStripMenuItem_Click);
+            // 
+            // favoriteToolStripMenuItem
+            // 
+            this.favoriteToolStripMenuItem.Name = "favoriteToolStripMenuItem";
+            this.favoriteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.favoriteToolStripMenuItem.Text = "(Un)Favorite";
+            this.favoriteToolStripMenuItem.Click += new System.EventHandler(this.favoriteToolStripMenuItem_Click);
+            // 
+            // imagesPokemon25
+            // 
+            this.imagesPokemon25.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imagesPokemon25.ImageStream")));
+            this.imagesPokemon25.TransparentColor = System.Drawing.Color.Transparent;
+            this.imagesPokemon25.Images.SetKeyName(0, "1.png");
+            this.imagesPokemon25.Images.SetKeyName(1, "1.png");
+            this.imagesPokemon25.Images.SetKeyName(2, "2.png");
+            this.imagesPokemon25.Images.SetKeyName(3, "3.png");
+            this.imagesPokemon25.Images.SetKeyName(4, "4.png");
+            this.imagesPokemon25.Images.SetKeyName(5, "5.png");
+            this.imagesPokemon25.Images.SetKeyName(6, "6.png");
+            this.imagesPokemon25.Images.SetKeyName(7, "7.png");
+            this.imagesPokemon25.Images.SetKeyName(8, "8.png");
+            this.imagesPokemon25.Images.SetKeyName(9, "9.png");
+            this.imagesPokemon25.Images.SetKeyName(10, "10.png");
+            this.imagesPokemon25.Images.SetKeyName(11, "11.png");
+            this.imagesPokemon25.Images.SetKeyName(12, "12.png");
+            this.imagesPokemon25.Images.SetKeyName(13, "13.png");
+            this.imagesPokemon25.Images.SetKeyName(14, "14.png");
+            this.imagesPokemon25.Images.SetKeyName(15, "15.png");
+            this.imagesPokemon25.Images.SetKeyName(16, "16.png");
+            this.imagesPokemon25.Images.SetKeyName(17, "17.png");
+            this.imagesPokemon25.Images.SetKeyName(18, "18.png");
+            this.imagesPokemon25.Images.SetKeyName(19, "19.png");
+            this.imagesPokemon25.Images.SetKeyName(20, "20.png");
+            this.imagesPokemon25.Images.SetKeyName(21, "21.png");
+            this.imagesPokemon25.Images.SetKeyName(22, "22.png");
+            this.imagesPokemon25.Images.SetKeyName(23, "23.png");
+            this.imagesPokemon25.Images.SetKeyName(24, "24.png");
+            this.imagesPokemon25.Images.SetKeyName(25, "25.png");
+            this.imagesPokemon25.Images.SetKeyName(26, "26.png");
+            this.imagesPokemon25.Images.SetKeyName(27, "27.png");
+            this.imagesPokemon25.Images.SetKeyName(28, "28.png");
+            this.imagesPokemon25.Images.SetKeyName(29, "29.png");
+            this.imagesPokemon25.Images.SetKeyName(30, "30.png");
+            this.imagesPokemon25.Images.SetKeyName(31, "31.png");
+            this.imagesPokemon25.Images.SetKeyName(32, "32.png");
+            this.imagesPokemon25.Images.SetKeyName(33, "33.png");
+            this.imagesPokemon25.Images.SetKeyName(34, "34.png");
+            this.imagesPokemon25.Images.SetKeyName(35, "35.png");
+            this.imagesPokemon25.Images.SetKeyName(36, "36.png");
+            this.imagesPokemon25.Images.SetKeyName(37, "37.png");
+            this.imagesPokemon25.Images.SetKeyName(38, "38.png");
+            this.imagesPokemon25.Images.SetKeyName(39, "39.png");
+            this.imagesPokemon25.Images.SetKeyName(40, "40.png");
+            this.imagesPokemon25.Images.SetKeyName(41, "41.png");
+            this.imagesPokemon25.Images.SetKeyName(42, "42.png");
+            this.imagesPokemon25.Images.SetKeyName(43, "43.png");
+            this.imagesPokemon25.Images.SetKeyName(44, "44.png");
+            this.imagesPokemon25.Images.SetKeyName(45, "45.png");
+            this.imagesPokemon25.Images.SetKeyName(46, "46.png");
+            this.imagesPokemon25.Images.SetKeyName(47, "47.png");
+            this.imagesPokemon25.Images.SetKeyName(48, "48.png");
+            this.imagesPokemon25.Images.SetKeyName(49, "49.png");
+            this.imagesPokemon25.Images.SetKeyName(50, "50.png");
+            this.imagesPokemon25.Images.SetKeyName(51, "51.png");
+            this.imagesPokemon25.Images.SetKeyName(52, "52.png");
+            this.imagesPokemon25.Images.SetKeyName(53, "53.png");
+            this.imagesPokemon25.Images.SetKeyName(54, "54.png");
+            this.imagesPokemon25.Images.SetKeyName(55, "55.png");
+            this.imagesPokemon25.Images.SetKeyName(56, "56.png");
+            this.imagesPokemon25.Images.SetKeyName(57, "57.png");
+            this.imagesPokemon25.Images.SetKeyName(58, "58.png");
+            this.imagesPokemon25.Images.SetKeyName(59, "59.png");
+            this.imagesPokemon25.Images.SetKeyName(60, "60.png");
+            this.imagesPokemon25.Images.SetKeyName(61, "61.png");
+            this.imagesPokemon25.Images.SetKeyName(62, "62.png");
+            this.imagesPokemon25.Images.SetKeyName(63, "63.png");
+            this.imagesPokemon25.Images.SetKeyName(64, "64.png");
+            this.imagesPokemon25.Images.SetKeyName(65, "65.png");
+            this.imagesPokemon25.Images.SetKeyName(66, "66.png");
+            this.imagesPokemon25.Images.SetKeyName(67, "67.png");
+            this.imagesPokemon25.Images.SetKeyName(68, "68.png");
+            this.imagesPokemon25.Images.SetKeyName(69, "69.png");
+            this.imagesPokemon25.Images.SetKeyName(70, "70.png");
+            this.imagesPokemon25.Images.SetKeyName(71, "71.png");
+            this.imagesPokemon25.Images.SetKeyName(72, "72.png");
+            this.imagesPokemon25.Images.SetKeyName(73, "73.png");
+            this.imagesPokemon25.Images.SetKeyName(74, "74.png");
+            this.imagesPokemon25.Images.SetKeyName(75, "75.png");
+            this.imagesPokemon25.Images.SetKeyName(76, "76.png");
+            this.imagesPokemon25.Images.SetKeyName(77, "77.png");
+            this.imagesPokemon25.Images.SetKeyName(78, "78.png");
+            this.imagesPokemon25.Images.SetKeyName(79, "79.png");
+            this.imagesPokemon25.Images.SetKeyName(80, "80.png");
+            this.imagesPokemon25.Images.SetKeyName(81, "81.png");
+            this.imagesPokemon25.Images.SetKeyName(82, "82.png");
+            this.imagesPokemon25.Images.SetKeyName(83, "83.png");
+            this.imagesPokemon25.Images.SetKeyName(84, "84.png");
+            this.imagesPokemon25.Images.SetKeyName(85, "85.png");
+            this.imagesPokemon25.Images.SetKeyName(86, "86.png");
+            this.imagesPokemon25.Images.SetKeyName(87, "87.png");
+            this.imagesPokemon25.Images.SetKeyName(88, "88.png");
+            this.imagesPokemon25.Images.SetKeyName(89, "89.png");
+            this.imagesPokemon25.Images.SetKeyName(90, "90.png");
+            this.imagesPokemon25.Images.SetKeyName(91, "91.png");
+            this.imagesPokemon25.Images.SetKeyName(92, "92.png");
+            this.imagesPokemon25.Images.SetKeyName(93, "93.png");
+            this.imagesPokemon25.Images.SetKeyName(94, "94.png");
+            this.imagesPokemon25.Images.SetKeyName(95, "95.png");
+            this.imagesPokemon25.Images.SetKeyName(96, "96.png");
+            this.imagesPokemon25.Images.SetKeyName(97, "97.png");
+            this.imagesPokemon25.Images.SetKeyName(98, "98.png");
+            this.imagesPokemon25.Images.SetKeyName(99, "99.png");
+            this.imagesPokemon25.Images.SetKeyName(100, "100.png");
+            this.imagesPokemon25.Images.SetKeyName(101, "101.png");
+            this.imagesPokemon25.Images.SetKeyName(102, "102.png");
+            this.imagesPokemon25.Images.SetKeyName(103, "103.png");
+            this.imagesPokemon25.Images.SetKeyName(104, "104.png");
+            this.imagesPokemon25.Images.SetKeyName(105, "105.png");
+            this.imagesPokemon25.Images.SetKeyName(106, "106.png");
+            this.imagesPokemon25.Images.SetKeyName(107, "107.png");
+            this.imagesPokemon25.Images.SetKeyName(108, "108.png");
+            this.imagesPokemon25.Images.SetKeyName(109, "109.png");
+            this.imagesPokemon25.Images.SetKeyName(110, "110.png");
+            this.imagesPokemon25.Images.SetKeyName(111, "111.png");
+            this.imagesPokemon25.Images.SetKeyName(112, "112.png");
+            this.imagesPokemon25.Images.SetKeyName(113, "113.png");
+            this.imagesPokemon25.Images.SetKeyName(114, "114.png");
+            this.imagesPokemon25.Images.SetKeyName(115, "115.png");
+            this.imagesPokemon25.Images.SetKeyName(116, "116.png");
+            this.imagesPokemon25.Images.SetKeyName(117, "117.png");
+            this.imagesPokemon25.Images.SetKeyName(118, "118.png");
+            this.imagesPokemon25.Images.SetKeyName(119, "119.png");
+            this.imagesPokemon25.Images.SetKeyName(120, "120.png");
+            this.imagesPokemon25.Images.SetKeyName(121, "121.png");
+            this.imagesPokemon25.Images.SetKeyName(122, "122.png");
+            this.imagesPokemon25.Images.SetKeyName(123, "123.png");
+            this.imagesPokemon25.Images.SetKeyName(124, "124.png");
+            this.imagesPokemon25.Images.SetKeyName(125, "125.png");
+            this.imagesPokemon25.Images.SetKeyName(126, "126.png");
+            this.imagesPokemon25.Images.SetKeyName(127, "127.png");
+            this.imagesPokemon25.Images.SetKeyName(128, "128.png");
+            this.imagesPokemon25.Images.SetKeyName(129, "129.png");
+            this.imagesPokemon25.Images.SetKeyName(130, "130.png");
+            this.imagesPokemon25.Images.SetKeyName(131, "131.png");
+            this.imagesPokemon25.Images.SetKeyName(132, "132.png");
+            this.imagesPokemon25.Images.SetKeyName(133, "133.png");
+            this.imagesPokemon25.Images.SetKeyName(134, "134.png");
+            this.imagesPokemon25.Images.SetKeyName(135, "135.png");
+            this.imagesPokemon25.Images.SetKeyName(136, "136.png");
+            this.imagesPokemon25.Images.SetKeyName(137, "137.png");
+            this.imagesPokemon25.Images.SetKeyName(138, "138.png");
+            this.imagesPokemon25.Images.SetKeyName(139, "139.png");
+            this.imagesPokemon25.Images.SetKeyName(140, "140.png");
+            this.imagesPokemon25.Images.SetKeyName(141, "141.png");
+            this.imagesPokemon25.Images.SetKeyName(142, "142.png");
+            this.imagesPokemon25.Images.SetKeyName(143, "143.png");
+            this.imagesPokemon25.Images.SetKeyName(144, "144.png");
+            this.imagesPokemon25.Images.SetKeyName(145, "145.png");
+            this.imagesPokemon25.Images.SetKeyName(146, "146.png");
+            this.imagesPokemon25.Images.SetKeyName(147, "147.png");
+            this.imagesPokemon25.Images.SetKeyName(148, "148.png");
+            this.imagesPokemon25.Images.SetKeyName(149, "149.png");
+            this.imagesPokemon25.Images.SetKeyName(150, "150.png");
+            this.imagesPokemon25.Images.SetKeyName(151, "151.png");
             // 
             // kryptonPage2
             // 
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage2.Controls.Add(this.labelPokemon);
+            this.kryptonPage2.Controls.Add(this.listCatches);
             this.kryptonPage2.Flags = 65534;
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(696, 169);
+            this.kryptonPage2.Size = new System.Drawing.Size(951, 273);
             this.kryptonPage2.Text = "Catches";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
             this.kryptonPage2.UniqueName = "36DEF9070199420184970DD2108773F7";
             // 
-            // labelPokemon
+            // listCatches
             // 
-            this.labelPokemon.AutoEllipsis = true;
-            this.labelPokemon.AutoSize = true;
-            this.labelPokemon.Font = new System.Drawing.Font("Lucida Console", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPokemon.Location = new System.Drawing.Point(11, 11);
-            this.labelPokemon.Name = "labelPokemon";
-            this.labelPokemon.Size = new System.Drawing.Size(23, 10);
-            this.labelPokemon.TabIndex = 1;
-            this.labelPokemon.Text = "...";
+            this.listCatches.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader24,
+            this.columnHeader23,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18,
+            this.columnHeader19,
+            this.columnHeader21,
+            this.columnHeader22});
+            this.listCatches.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listCatches.GridLines = true;
+            this.listCatches.Location = new System.Drawing.Point(0, 0);
+            this.listCatches.Name = "listCatches";
+            this.listCatches.Size = new System.Drawing.Size(951, 273);
+            this.listCatches.TabIndex = 2;
+            this.listCatches.UseCompatibleStateImageBehavior = false;
+            this.listCatches.View = System.Windows.Forms.View.Details;
+            this.listCatches.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listCatches_ColumnClick);
+            // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "Time";
+            this.columnHeader24.Width = 64;
+            // 
+            // columnHeader23
+            // 
+            this.columnHeader23.Text = "Status";
+            this.columnHeader23.Width = 141;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Pokemon";
+            this.columnHeader12.Width = 109;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Level";
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "CP";
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "IV";
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Chance";
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Distance";
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Encountered via";
+            this.columnHeader18.Width = 96;
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "Caught with";
+            this.columnHeader19.Width = 92;
+            // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Text = "XP earned";
+            this.columnHeader21.Width = 71;
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Text = "Candies";
             // 
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage1.Controls.Add(this.labelTransfers);
+            this.kryptonPage1.Controls.Add(this.listTransfers);
             this.kryptonPage1.Flags = 65534;
             this.kryptonPage1.LastVisibleSet = true;
             this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(696, 169);
+            this.kryptonPage1.Size = new System.Drawing.Size(956, 273);
             this.kryptonPage1.Text = "Transfers";
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "83BA01CB97A24BFBE8AA146179467030";
             // 
-            // labelTransfers
+            // listTransfers
             // 
-            this.labelTransfers.AutoEllipsis = true;
-            this.labelTransfers.AutoSize = true;
-            this.labelTransfers.Font = new System.Drawing.Font("Lucida Console", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTransfers.Location = new System.Drawing.Point(11, 11);
-            this.labelTransfers.Name = "labelTransfers";
-            this.labelTransfers.Size = new System.Drawing.Size(23, 10);
-            this.labelTransfers.TabIndex = 1;
-            this.labelTransfers.Text = "...";
+            this.listTransfers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader31,
+            this.columnHeader32});
+            this.listTransfers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listTransfers.GridLines = true;
+            this.listTransfers.Location = new System.Drawing.Point(0, 0);
+            this.listTransfers.Name = "listTransfers";
+            this.listTransfers.Size = new System.Drawing.Size(956, 273);
+            this.listTransfers.TabIndex = 0;
+            this.listTransfers.UseCompatibleStateImageBehavior = false;
+            this.listTransfers.View = System.Windows.Forms.View.Details;
+            this.listTransfers.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listTransfers_ColumnClick);
+            // 
+            // columnHeader31
+            // 
+            this.columnHeader31.Text = "Time";
+            this.columnHeader31.Width = 90;
+            // 
+            // columnHeader32
+            // 
+            this.columnHeader32.Text = "Transfer";
+            this.columnHeader32.Width = 525;
             // 
             // kryptonPage7
             // 
             this.kryptonPage7.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage7.Controls.Add(this.labelEvolves);
+            this.kryptonPage7.Controls.Add(this.listEvolutions);
             this.kryptonPage7.Flags = 65534;
             this.kryptonPage7.LastVisibleSet = true;
             this.kryptonPage7.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage7.Name = "kryptonPage7";
-            this.kryptonPage7.Size = new System.Drawing.Size(696, 169);
+            this.kryptonPage7.Size = new System.Drawing.Size(956, 273);
             this.kryptonPage7.Text = "Evolutions";
             this.kryptonPage7.ToolTipTitle = "Page ToolTip";
             this.kryptonPage7.UniqueName = "2AB86471AE434ECA8FA45D5E08C094BA";
             // 
-            // labelEvolves
+            // listEvolutions
             // 
-            this.labelEvolves.AutoEllipsis = true;
-            this.labelEvolves.AutoSize = true;
-            this.labelEvolves.Font = new System.Drawing.Font("Lucida Console", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEvolves.Location = new System.Drawing.Point(11, 11);
-            this.labelEvolves.Name = "labelEvolves";
-            this.labelEvolves.Size = new System.Drawing.Size(23, 10);
-            this.labelEvolves.TabIndex = 1;
-            this.labelEvolves.Text = "...";
+            this.listEvolutions.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader29,
+            this.columnHeader30});
+            this.listEvolutions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listEvolutions.GridLines = true;
+            this.listEvolutions.Location = new System.Drawing.Point(0, 0);
+            this.listEvolutions.Name = "listEvolutions";
+            this.listEvolutions.Size = new System.Drawing.Size(956, 273);
+            this.listEvolutions.TabIndex = 0;
+            this.listEvolutions.UseCompatibleStateImageBehavior = false;
+            this.listEvolutions.View = System.Windows.Forms.View.Details;
+            this.listEvolutions.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listEvolves_ColumnClick);
+            // 
+            // columnHeader29
+            // 
+            this.columnHeader29.Text = "Time";
+            this.columnHeader29.Width = 90;
+            // 
+            // columnHeader30
+            // 
+            this.columnHeader30.Text = "Evolution";
+            this.columnHeader30.Width = 629;
             // 
             // kryptonWorkspaceSequence2
             // 
@@ -506,58 +940,63 @@
             this.kryptonWorkspaceCell2.Name = "kryptonWorkspaceCell2";
             this.kryptonWorkspaceCell2.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.BarRibbonTabGroup;
             this.kryptonWorkspaceCell2.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
-            this.kryptonPage4,
-            this.kryptonPage3});
+            this.kryptonPage4});
             this.kryptonWorkspaceCell2.SelectedIndex = 0;
             this.kryptonWorkspaceCell2.UniqueName = "03644174F9354A5184B8F85630430128";
             // 
             // kryptonPage4
             // 
             this.kryptonPage4.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage4.Controls.Add(this.labelNext);
-            this.kryptonPage4.Controls.Add(this.labelStops);
+            this.kryptonPage4.Controls.Add(this.listPokestops);
             this.kryptonPage4.Flags = 65534;
             this.kryptonPage4.LastVisibleSet = true;
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Size = new System.Drawing.Size(460, 188);
+            this.kryptonPage4.Size = new System.Drawing.Size(630, 188);
             this.kryptonPage4.Text = "Pokestops";
             this.kryptonPage4.ToolTipTitle = "Page ToolTip";
             this.kryptonPage4.UniqueName = "DA3EF71AB201450F2F8D484D9058FAD9";
             // 
-            // labelNext
+            // listPokestops
             // 
-            this.labelNext.Font = new System.Drawing.Font("Lucida Console", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNext.ForeColor = System.Drawing.Color.Black;
-            this.labelNext.Location = new System.Drawing.Point(6, 6);
-            this.labelNext.Name = "labelNext";
-            this.labelNext.Size = new System.Drawing.Size(89, 10);
-            this.labelNext.StateNormal.Font = new System.Drawing.Font("Lucida Console", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNext.Text = "Next stop: ???";
+            this.listPokestops.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader20,
+            this.columnHeader25,
+            this.columnHeader26,
+            this.columnHeader27,
+            this.columnHeader28});
+            this.listPokestops.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listPokestops.GridLines = true;
+            this.listPokestops.Location = new System.Drawing.Point(0, 0);
+            this.listPokestops.Name = "listPokestops";
+            this.listPokestops.Size = new System.Drawing.Size(630, 188);
+            this.listPokestops.TabIndex = 0;
+            this.listPokestops.UseCompatibleStateImageBehavior = false;
+            this.listPokestops.View = System.Windows.Forms.View.Details;
+            this.listPokestops.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listPokestops_ColumnClick);
             // 
-            // labelStops
+            // columnHeader20
             // 
-            this.labelStops.AutoEllipsis = true;
-            this.labelStops.Font = new System.Drawing.Font("Lucida Console", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStops.ForeColor = System.Drawing.Color.Black;
-            this.labelStops.Location = new System.Drawing.Point(4, 20);
-            this.labelStops.Name = "labelStops";
-            this.labelStops.Size = new System.Drawing.Size(11, 10);
-            this.labelStops.StateNormal.Font = new System.Drawing.Font("Lucida Console", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStops.Text = ".";
+            this.columnHeader20.Text = "Time";
+            this.columnHeader20.Width = 88;
             // 
-            // kryptonPage3
+            // columnHeader25
             // 
-            this.kryptonPage3.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage3.Flags = 65534;
-            this.kryptonPage3.LastVisibleSet = true;
-            this.kryptonPage3.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kryptonPage3.Name = "kryptonPage3";
-            this.kryptonPage3.Size = new System.Drawing.Size(344, 178);
-            this.kryptonPage3.Text = "Inventory actions";
-            this.kryptonPage3.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage3.UniqueName = "80E0708012744C8528935BF203F9940E";
-            this.kryptonPage3.Visible = false;
+            this.columnHeader25.Text = "Name";
+            this.columnHeader25.Width = 241;
+            // 
+            // columnHeader26
+            // 
+            this.columnHeader26.Text = "XP";
+            // 
+            // columnHeader27
+            // 
+            this.columnHeader27.Text = "Gems";
+            // 
+            // columnHeader28
+            // 
+            this.columnHeader28.Text = "Items";
+            this.columnHeader28.Width = 179;
             // 
             // kryptonWorkspaceCell3
             // 
@@ -570,7 +1009,7 @@
             this.kryptonWorkspaceCell3.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
             this.kryptonPage10,
             this.kryptonPage13});
-            this.kryptonWorkspaceCell3.SelectedIndex = 1;
+            this.kryptonWorkspaceCell3.SelectedIndex = 0;
             this.kryptonWorkspaceCell3.StarSize = "25*,25*";
             this.kryptonWorkspaceCell3.UniqueName = "9965A6F145C24D19C796531A0BDC4A02";
             // 
@@ -582,7 +1021,7 @@
             this.kryptonPage10.LastVisibleSet = true;
             this.kryptonPage10.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage10.Name = "kryptonPage10";
-            this.kryptonPage10.Size = new System.Drawing.Size(345, 178);
+            this.kryptonPage10.Size = new System.Drawing.Size(314, 188);
             this.kryptonPage10.Text = "Inventory";
             this.kryptonPage10.ToolTipTitle = "Page ToolTip";
             this.kryptonPage10.UniqueName = "7E38A71BAAFD4560D886BDD734C37B8D";
@@ -593,10 +1032,13 @@
             this.itemName,
             this.itemCount,
             this.itemMax});
+            this.listInv.ContextMenuStrip = this.contextInventory;
             this.listInv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listInv.FullRowSelect = true;
             this.listInv.Location = new System.Drawing.Point(0, 0);
+            this.listInv.MultiSelect = false;
             this.listInv.Name = "listInv";
-            this.listInv.Size = new System.Drawing.Size(345, 178);
+            this.listInv.Size = new System.Drawing.Size(314, 188);
             this.listInv.TabIndex = 4;
             this.listInv.UseCompatibleStateImageBehavior = false;
             this.listInv.View = System.Windows.Forms.View.Details;
@@ -619,6 +1061,21 @@
             this.itemMax.Text = "Max";
             this.itemMax.Width = 68;
             // 
+            // contextInventory
+            // 
+            this.contextInventory.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.contextInventory.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.disposechooseAmountToolStripMenuItem});
+            this.contextInventory.Name = "contextInventory";
+            this.contextInventory.Size = new System.Drawing.Size(210, 26);
+            // 
+            // disposechooseAmountToolStripMenuItem
+            // 
+            this.disposechooseAmountToolStripMenuItem.Name = "disposechooseAmountToolStripMenuItem";
+            this.disposechooseAmountToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.disposechooseAmountToolStripMenuItem.Text = "Dispose (choose amount)";
+            this.disposechooseAmountToolStripMenuItem.Click += new System.EventHandler(this.disposechooseAmountToolStripMenuItem_Click);
+            // 
             // kryptonPage13
             // 
             this.kryptonPage13.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
@@ -627,7 +1084,7 @@
             this.kryptonPage13.LastVisibleSet = true;
             this.kryptonPage13.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage13.Name = "kryptonPage13";
-            this.kryptonPage13.Size = new System.Drawing.Size(229, 188);
+            this.kryptonPage13.Size = new System.Drawing.Size(316, 188);
             this.kryptonPage13.Text = "Eggs";
             this.kryptonPage13.ToolTipTitle = "Page ToolTip";
             this.kryptonPage13.UniqueName = "49BFF043810C4CEDCE84A522178FCDAA";
@@ -638,7 +1095,7 @@
             this.listEggs.LargeImageList = this.imagesEgg;
             this.listEggs.Location = new System.Drawing.Point(0, 0);
             this.listEggs.Name = "listEggs";
-            this.listEggs.Size = new System.Drawing.Size(229, 188);
+            this.listEggs.Size = new System.Drawing.Size(316, 188);
             this.listEggs.TabIndex = 4;
             this.listEggs.UseCompatibleStateImageBehavior = false;
             // 
@@ -664,23 +1121,34 @@
             // kryptonPage6
             // 
             this.kryptonPage6.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPage6.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
+            this.btnClearLogs});
             this.kryptonPage6.Controls.Add(this.textLog);
             this.kryptonPage6.Flags = 65534;
             this.kryptonPage6.LastVisibleSet = true;
             this.kryptonPage6.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage6.Name = "kryptonPage6";
-            this.kryptonPage6.Size = new System.Drawing.Size(696, 68);
+            this.kryptonPage6.Size = new System.Drawing.Size(951, 62);
             this.kryptonPage6.Text = "Logging";
             this.kryptonPage6.ToolTipTitle = "Page ToolTip";
             this.kryptonPage6.UniqueName = "35B88DF3AE7348555A9D3B6EECDEB36E";
             // 
+            // btnClearLogs
+            // 
+            this.btnClearLogs.Checked = ComponentFactory.Krypton.Toolkit.ButtonCheckState.Checked;
+            this.btnClearLogs.Text = "Clear";
+            this.btnClearLogs.UniqueName = "F91712B935354CA1C996D5B8C060558E";
+            this.btnClearLogs.Click += new System.EventHandler(this.btnClearLogs_Click);
+            // 
             // textLog
             // 
+            this.textLog.BackColor = System.Drawing.SystemColors.MenuText;
             this.textLog.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textLog.Font = new System.Drawing.Font("Lucida Console", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLog.ForeColor = System.Drawing.SystemColors.Window;
             this.textLog.Location = new System.Drawing.Point(0, 0);
             this.textLog.Name = "textLog";
-            this.textLog.Size = new System.Drawing.Size(696, 68);
+            this.textLog.Size = new System.Drawing.Size(951, 62);
             this.textLog.TabIndex = 0;
             this.textLog.Tag = "";
             this.textLog.Text = "";
@@ -692,7 +1160,9 @@
             this.kryptonWorkspaceCell6.Bar.TabStyle = ComponentFactory.Krypton.Toolkit.TabStyle.StandardProfile;
             this.kryptonWorkspaceCell6.Name = "kryptonWorkspaceCell6";
             this.kryptonWorkspaceCell6.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
-            this.kryptonPage11});
+            this.kryptonPage11,
+            this.kryptonPage5,
+            this.kryptonPage16});
             this.kryptonWorkspaceCell6.SelectedIndex = 0;
             this.kryptonWorkspaceCell6.StarSize = "33*,33*";
             this.kryptonWorkspaceCell6.UniqueName = "3B97103068BD4F6A3E8F04DB9A7B930C";
@@ -705,7 +1175,7 @@
             this.kryptonPage11.LastVisibleSet = true;
             this.kryptonPage11.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage11.Name = "kryptonPage11";
-            this.kryptonPage11.Size = new System.Drawing.Size(459, 605);
+            this.kryptonPage11.Size = new System.Drawing.Size(628, 605);
             this.kryptonPage11.Text = "Map";
             this.kryptonPage11.ToolTipTitle = "Page ToolTip";
             this.kryptonPage11.UniqueName = "1EA01AC7DE7B4854EFA1038D0559A4BD";
@@ -716,9 +1186,237 @@
             this.webMap.Location = new System.Drawing.Point(0, 0);
             this.webMap.MinimumSize = new System.Drawing.Size(20, 20);
             this.webMap.Name = "webMap";
-            this.webMap.Size = new System.Drawing.Size(459, 605);
+            this.webMap.Size = new System.Drawing.Size(628, 605);
             this.webMap.TabIndex = 0;
             this.webMap.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webMap_DocumentCompleted);
+            // 
+            // kryptonPage5
+            // 
+            this.kryptonPage5.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPage5.Controls.Add(this.listPokemonStats);
+            this.kryptonPage5.Flags = 65534;
+            this.kryptonPage5.LastVisibleSet = true;
+            this.kryptonPage5.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage5.Name = "kryptonPage5";
+            this.kryptonPage5.Size = new System.Drawing.Size(703, 605);
+            this.kryptonPage5.Text = "Missing pokemon";
+            this.kryptonPage5.ToolTipTitle = "Page ToolTip";
+            this.kryptonPage5.UniqueName = "9DC823D926CE477CF3B717175DC1171A";
+            // 
+            // listPokemonStats
+            // 
+            this.listPokemonStats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listPokemonStats.GridLines = true;
+            listViewItem1.Tag = "114";
+            this.listPokemonStats.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.listPokemonStats.LargeImageList = this.iamgesPokemon100;
+            this.listPokemonStats.Location = new System.Drawing.Point(0, 0);
+            this.listPokemonStats.MultiSelect = false;
+            this.listPokemonStats.Name = "listPokemonStats";
+            this.listPokemonStats.Size = new System.Drawing.Size(703, 605);
+            this.listPokemonStats.TabIndex = 0;
+            this.listPokemonStats.UseCompatibleStateImageBehavior = false;
+            // 
+            // iamgesPokemon100
+            // 
+            this.iamgesPokemon100.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iamgesPokemon100.ImageStream")));
+            this.iamgesPokemon100.TransparentColor = System.Drawing.Color.Transparent;
+            this.iamgesPokemon100.Images.SetKeyName(0, "1.png");
+            this.iamgesPokemon100.Images.SetKeyName(1, "1.png");
+            this.iamgesPokemon100.Images.SetKeyName(2, "2.png");
+            this.iamgesPokemon100.Images.SetKeyName(3, "3.png");
+            this.iamgesPokemon100.Images.SetKeyName(4, "4.png");
+            this.iamgesPokemon100.Images.SetKeyName(5, "5.png");
+            this.iamgesPokemon100.Images.SetKeyName(6, "6.png");
+            this.iamgesPokemon100.Images.SetKeyName(7, "7.png");
+            this.iamgesPokemon100.Images.SetKeyName(8, "8.png");
+            this.iamgesPokemon100.Images.SetKeyName(9, "9.png");
+            this.iamgesPokemon100.Images.SetKeyName(10, "10.png");
+            this.iamgesPokemon100.Images.SetKeyName(11, "11.png");
+            this.iamgesPokemon100.Images.SetKeyName(12, "12.png");
+            this.iamgesPokemon100.Images.SetKeyName(13, "13.png");
+            this.iamgesPokemon100.Images.SetKeyName(14, "14.png");
+            this.iamgesPokemon100.Images.SetKeyName(15, "15.png");
+            this.iamgesPokemon100.Images.SetKeyName(16, "16.png");
+            this.iamgesPokemon100.Images.SetKeyName(17, "17.png");
+            this.iamgesPokemon100.Images.SetKeyName(18, "18.png");
+            this.iamgesPokemon100.Images.SetKeyName(19, "19.png");
+            this.iamgesPokemon100.Images.SetKeyName(20, "20.png");
+            this.iamgesPokemon100.Images.SetKeyName(21, "21.png");
+            this.iamgesPokemon100.Images.SetKeyName(22, "22.png");
+            this.iamgesPokemon100.Images.SetKeyName(23, "23.png");
+            this.iamgesPokemon100.Images.SetKeyName(24, "24.png");
+            this.iamgesPokemon100.Images.SetKeyName(25, "25.png");
+            this.iamgesPokemon100.Images.SetKeyName(26, "26.png");
+            this.iamgesPokemon100.Images.SetKeyName(27, "27.png");
+            this.iamgesPokemon100.Images.SetKeyName(28, "28.png");
+            this.iamgesPokemon100.Images.SetKeyName(29, "29.png");
+            this.iamgesPokemon100.Images.SetKeyName(30, "30.png");
+            this.iamgesPokemon100.Images.SetKeyName(31, "31.png");
+            this.iamgesPokemon100.Images.SetKeyName(32, "32.png");
+            this.iamgesPokemon100.Images.SetKeyName(33, "33.png");
+            this.iamgesPokemon100.Images.SetKeyName(34, "34.png");
+            this.iamgesPokemon100.Images.SetKeyName(35, "35.png");
+            this.iamgesPokemon100.Images.SetKeyName(36, "36.png");
+            this.iamgesPokemon100.Images.SetKeyName(37, "37.png");
+            this.iamgesPokemon100.Images.SetKeyName(38, "38.png");
+            this.iamgesPokemon100.Images.SetKeyName(39, "39.png");
+            this.iamgesPokemon100.Images.SetKeyName(40, "40.png");
+            this.iamgesPokemon100.Images.SetKeyName(41, "41.png");
+            this.iamgesPokemon100.Images.SetKeyName(42, "42.png");
+            this.iamgesPokemon100.Images.SetKeyName(43, "43.png");
+            this.iamgesPokemon100.Images.SetKeyName(44, "44.png");
+            this.iamgesPokemon100.Images.SetKeyName(45, "45.png");
+            this.iamgesPokemon100.Images.SetKeyName(46, "46.png");
+            this.iamgesPokemon100.Images.SetKeyName(47, "47.png");
+            this.iamgesPokemon100.Images.SetKeyName(48, "48.png");
+            this.iamgesPokemon100.Images.SetKeyName(49, "49.png");
+            this.iamgesPokemon100.Images.SetKeyName(50, "50.png");
+            this.iamgesPokemon100.Images.SetKeyName(51, "51.png");
+            this.iamgesPokemon100.Images.SetKeyName(52, "52.png");
+            this.iamgesPokemon100.Images.SetKeyName(53, "53.png");
+            this.iamgesPokemon100.Images.SetKeyName(54, "54.png");
+            this.iamgesPokemon100.Images.SetKeyName(55, "55.png");
+            this.iamgesPokemon100.Images.SetKeyName(56, "56.png");
+            this.iamgesPokemon100.Images.SetKeyName(57, "57.png");
+            this.iamgesPokemon100.Images.SetKeyName(58, "58.png");
+            this.iamgesPokemon100.Images.SetKeyName(59, "59.png");
+            this.iamgesPokemon100.Images.SetKeyName(60, "60.png");
+            this.iamgesPokemon100.Images.SetKeyName(61, "61.png");
+            this.iamgesPokemon100.Images.SetKeyName(62, "62.png");
+            this.iamgesPokemon100.Images.SetKeyName(63, "63.png");
+            this.iamgesPokemon100.Images.SetKeyName(64, "64.png");
+            this.iamgesPokemon100.Images.SetKeyName(65, "65.png");
+            this.iamgesPokemon100.Images.SetKeyName(66, "66.png");
+            this.iamgesPokemon100.Images.SetKeyName(67, "67.png");
+            this.iamgesPokemon100.Images.SetKeyName(68, "68.png");
+            this.iamgesPokemon100.Images.SetKeyName(69, "69.png");
+            this.iamgesPokemon100.Images.SetKeyName(70, "70.png");
+            this.iamgesPokemon100.Images.SetKeyName(71, "71.png");
+            this.iamgesPokemon100.Images.SetKeyName(72, "72.png");
+            this.iamgesPokemon100.Images.SetKeyName(73, "73.png");
+            this.iamgesPokemon100.Images.SetKeyName(74, "74.png");
+            this.iamgesPokemon100.Images.SetKeyName(75, "75.png");
+            this.iamgesPokemon100.Images.SetKeyName(76, "76.png");
+            this.iamgesPokemon100.Images.SetKeyName(77, "77.png");
+            this.iamgesPokemon100.Images.SetKeyName(78, "78.png");
+            this.iamgesPokemon100.Images.SetKeyName(79, "79.png");
+            this.iamgesPokemon100.Images.SetKeyName(80, "80.png");
+            this.iamgesPokemon100.Images.SetKeyName(81, "81.png");
+            this.iamgesPokemon100.Images.SetKeyName(82, "82.png");
+            this.iamgesPokemon100.Images.SetKeyName(83, "83.png");
+            this.iamgesPokemon100.Images.SetKeyName(84, "84.png");
+            this.iamgesPokemon100.Images.SetKeyName(85, "85.png");
+            this.iamgesPokemon100.Images.SetKeyName(86, "86.png");
+            this.iamgesPokemon100.Images.SetKeyName(87, "87.png");
+            this.iamgesPokemon100.Images.SetKeyName(88, "88.png");
+            this.iamgesPokemon100.Images.SetKeyName(89, "89.png");
+            this.iamgesPokemon100.Images.SetKeyName(90, "90.png");
+            this.iamgesPokemon100.Images.SetKeyName(91, "91.png");
+            this.iamgesPokemon100.Images.SetKeyName(92, "92.png");
+            this.iamgesPokemon100.Images.SetKeyName(93, "93.png");
+            this.iamgesPokemon100.Images.SetKeyName(94, "94.png");
+            this.iamgesPokemon100.Images.SetKeyName(95, "95.png");
+            this.iamgesPokemon100.Images.SetKeyName(96, "96.png");
+            this.iamgesPokemon100.Images.SetKeyName(97, "97.png");
+            this.iamgesPokemon100.Images.SetKeyName(98, "98.png");
+            this.iamgesPokemon100.Images.SetKeyName(99, "99.png");
+            this.iamgesPokemon100.Images.SetKeyName(100, "100.png");
+            this.iamgesPokemon100.Images.SetKeyName(101, "101.png");
+            this.iamgesPokemon100.Images.SetKeyName(102, "102.png");
+            this.iamgesPokemon100.Images.SetKeyName(103, "103.png");
+            this.iamgesPokemon100.Images.SetKeyName(104, "104.png");
+            this.iamgesPokemon100.Images.SetKeyName(105, "105.png");
+            this.iamgesPokemon100.Images.SetKeyName(106, "106.png");
+            this.iamgesPokemon100.Images.SetKeyName(107, "107.png");
+            this.iamgesPokemon100.Images.SetKeyName(108, "108.png");
+            this.iamgesPokemon100.Images.SetKeyName(109, "109.png");
+            this.iamgesPokemon100.Images.SetKeyName(110, "110.png");
+            this.iamgesPokemon100.Images.SetKeyName(111, "111.png");
+            this.iamgesPokemon100.Images.SetKeyName(112, "112.png");
+            this.iamgesPokemon100.Images.SetKeyName(113, "113.png");
+            this.iamgesPokemon100.Images.SetKeyName(114, "114.png");
+            this.iamgesPokemon100.Images.SetKeyName(115, "115.png");
+            this.iamgesPokemon100.Images.SetKeyName(116, "116.png");
+            this.iamgesPokemon100.Images.SetKeyName(117, "117.png");
+            this.iamgesPokemon100.Images.SetKeyName(118, "118.png");
+            this.iamgesPokemon100.Images.SetKeyName(119, "119.png");
+            this.iamgesPokemon100.Images.SetKeyName(120, "120.png");
+            this.iamgesPokemon100.Images.SetKeyName(121, "121.png");
+            this.iamgesPokemon100.Images.SetKeyName(122, "122.png");
+            this.iamgesPokemon100.Images.SetKeyName(123, "123.png");
+            this.iamgesPokemon100.Images.SetKeyName(124, "124.png");
+            this.iamgesPokemon100.Images.SetKeyName(125, "125.png");
+            this.iamgesPokemon100.Images.SetKeyName(126, "126.png");
+            this.iamgesPokemon100.Images.SetKeyName(127, "127.png");
+            this.iamgesPokemon100.Images.SetKeyName(128, "128.png");
+            this.iamgesPokemon100.Images.SetKeyName(129, "129.png");
+            this.iamgesPokemon100.Images.SetKeyName(130, "130.png");
+            this.iamgesPokemon100.Images.SetKeyName(131, "131.png");
+            this.iamgesPokemon100.Images.SetKeyName(132, "132.png");
+            this.iamgesPokemon100.Images.SetKeyName(133, "133.png");
+            this.iamgesPokemon100.Images.SetKeyName(134, "134.png");
+            this.iamgesPokemon100.Images.SetKeyName(135, "135.png");
+            this.iamgesPokemon100.Images.SetKeyName(136, "136.png");
+            this.iamgesPokemon100.Images.SetKeyName(137, "137.png");
+            this.iamgesPokemon100.Images.SetKeyName(138, "138.png");
+            this.iamgesPokemon100.Images.SetKeyName(139, "139.png");
+            this.iamgesPokemon100.Images.SetKeyName(140, "140.png");
+            this.iamgesPokemon100.Images.SetKeyName(141, "141.png");
+            this.iamgesPokemon100.Images.SetKeyName(142, "142.png");
+            this.iamgesPokemon100.Images.SetKeyName(143, "143.png");
+            this.iamgesPokemon100.Images.SetKeyName(144, "144.png");
+            this.iamgesPokemon100.Images.SetKeyName(145, "145.png");
+            this.iamgesPokemon100.Images.SetKeyName(146, "146.png");
+            this.iamgesPokemon100.Images.SetKeyName(147, "147.png");
+            this.iamgesPokemon100.Images.SetKeyName(148, "148.png");
+            this.iamgesPokemon100.Images.SetKeyName(149, "149.png");
+            this.iamgesPokemon100.Images.SetKeyName(150, "150.png");
+            this.iamgesPokemon100.Images.SetKeyName(151, "151.png");
+            // 
+            // kryptonPage16
+            // 
+            this.kryptonPage16.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPage16.Controls.Add(this.tableLayoutPanel1);
+            this.kryptonPage16.Flags = 65534;
+            this.kryptonPage16.LastVisibleSet = true;
+            this.kryptonPage16.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kryptonPage16.Name = "kryptonPage16";
+            this.kryptonPage16.Size = new System.Drawing.Size(703, 605);
+            this.kryptonPage16.Text = "Pokemon statistics";
+            this.kryptonPage16.ToolTipTitle = "Page ToolTip";
+            this.kryptonPage16.UniqueName = "672DEBD4663641C957B601B8D3675975";
+            this.kryptonPage16.Visible = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 168F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 232F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(703, 605);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(183, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(335, 162);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // pageLogging
             // 
@@ -742,9 +1440,12 @@
             this.ribbonMain.RibbonAppButton.AppButtonShowRecentDocs = false;
             this.ribbonMain.RibbonAppButton.AppButtonText = "Go";
             this.ribbonMain.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
-            this.kryptonRibbonTab2});
+            this.kryptonRibbonTab2,
+            this.kryptonRibbonTab3,
+            this.kryptonRibbonTab4,
+            this.kryptonRibbonTab5});
             this.ribbonMain.SelectedTab = this.kryptonRibbonTab2;
-            this.ribbonMain.Size = new System.Drawing.Size(1164, 115);
+            this.ribbonMain.Size = new System.Drawing.Size(1588, 115);
             this.ribbonMain.TabIndex = 0;
             // 
             // kryptonRibbonTab2
@@ -753,11 +1454,14 @@
             this.kryptonRibbonGroup5,
             this.kryptonRibbonGroup3,
             this.kryptonRibbonGroup4,
-            this.kryptonRibbonGroup2});
+            this.kryptonRibbonGroup2,
+            this.kryptonRibbonGroup8,
+            this.kryptonRibbonGroup7});
             this.kryptonRibbonTab2.Text = "Status";
             // 
             // kryptonRibbonGroup5
             // 
+            this.kryptonRibbonGroup5.DialogBoxLauncher = false;
             this.kryptonRibbonGroup5.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple5,
             this.kryptonRibbonGroupTriple6});
@@ -819,6 +1523,7 @@
             // 
             // kryptonRibbonGroup3
             // 
+            this.kryptonRibbonGroup3.DialogBoxLauncher = false;
             this.kryptonRibbonGroup3.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple7,
             this.kryptonRibbonGroupTriple8});
@@ -868,6 +1573,7 @@
             // 
             // kryptonRibbonGroup4
             // 
+            this.kryptonRibbonGroup4.DialogBoxLauncher = false;
             this.kryptonRibbonGroup4.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple10,
             this.kryptonRibbonGroupTriple9});
@@ -885,7 +1591,7 @@
             // 
             this.labelPokemonAmount.ImageSmall = ((System.Drawing.Image)(resources.GetObject("labelPokemonAmount.ImageSmall")));
             this.labelPokemonAmount.TextLine1 = "Pokemon";
-            this.labelPokemonAmount.TextLine2 = "0/150";
+            this.labelPokemonAmount.TextLine2 = "0/145";
             // 
             // labelPokestopsVisited
             // 
@@ -927,43 +1633,198 @@
             // 
             // kryptonRibbonGroup2
             // 
+            this.kryptonRibbonGroup2.DialogBoxLauncher = false;
             this.kryptonRibbonGroup2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple3,
             this.kryptonRibbonGroupTriple4});
             this.kryptonRibbonGroup2.TextLine1 = "Inventory";
-            this.kryptonRibbonGroup2.Visible = false;
             // 
             // kryptonRibbonGroupTriple3
             // 
             this.kryptonRibbonGroupTriple3.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.kryptonRibbonGroupButton4,
-            this.kryptonRibbonGroupButton5,
-            this.kryptonRibbonGroupButton6});
+            this.labelPokemonCount,
+            this.labelItemCount,
+            this.labelEggCount});
             // 
-            // kryptonRibbonGroupButton4
+            // labelPokemonCount
             // 
-            this.kryptonRibbonGroupButton4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton4.ImageLarge")));
-            this.kryptonRibbonGroupButton4.TextLine1 = "Pokemon";
+            this.labelPokemonCount.ImageLarge = ((System.Drawing.Image)(resources.GetObject("labelPokemonCount.ImageLarge")));
+            this.labelPokemonCount.TextLine1 = "Pokemon";
             // 
-            // kryptonRibbonGroupButton5
+            // labelItemCount
             // 
-            this.kryptonRibbonGroupButton5.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton5.ImageLarge")));
-            this.kryptonRibbonGroupButton5.TextLine1 = "Items";
+            this.labelItemCount.ImageLarge = ((System.Drawing.Image)(resources.GetObject("labelItemCount.ImageLarge")));
+            this.labelItemCount.TextLine1 = "Items";
             // 
-            // kryptonRibbonGroupButton6
+            // labelEggCount
             // 
-            this.kryptonRibbonGroupButton6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton6.ImageLarge")));
-            this.kryptonRibbonGroupButton6.TextLine1 = "Eggs";
+            this.labelEggCount.ImageLarge = ((System.Drawing.Image)(resources.GetObject("labelEggCount.ImageLarge")));
+            this.labelEggCount.TextLine1 = "Eggs";
             // 
             // kryptonRibbonGroupTriple4
             // 
             this.kryptonRibbonGroupTriple4.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.kryptonRibbonGroupButton9});
+            this.labelPokedex});
             // 
-            // kryptonRibbonGroupButton9
+            // labelPokedex
             // 
-            this.kryptonRibbonGroupButton9.ImageLarge = ((System.Drawing.Image)(resources.GetObject("kryptonRibbonGroupButton9.ImageLarge")));
-            this.kryptonRibbonGroupButton9.TextLine1 = "Pokedex";
+            this.labelPokedex.ImageLarge = ((System.Drawing.Image)(resources.GetObject("labelPokedex.ImageLarge")));
+            this.labelPokedex.TextLine1 = "Pokedex";
+            // 
+            // kryptonRibbonGroup8
+            // 
+            this.kryptonRibbonGroup8.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup8.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple15});
+            this.kryptonRibbonGroup8.TextLine1 = "Updates";
+            this.kryptonRibbonGroup8.Visible = false;
+            // 
+            // kryptonRibbonGroupTriple15
+            // 
+            this.kryptonRibbonGroupTriple15.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.labelNext,
+            this.labelUpdate,
+            this.labelUpdate2});
+            this.kryptonRibbonGroupTriple15.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // labelNext
+            // 
+            this.labelNext.ImageSmall = ((System.Drawing.Image)(resources.GetObject("labelNext.ImageSmall")));
+            this.labelNext.TextLine1 = "Next stop: Unknown";
+            // 
+            // labelUpdate
+            // 
+            this.labelUpdate.ImageSmall = ((System.Drawing.Image)(resources.GetObject("labelUpdate.ImageSmall")));
+            this.labelUpdate.TextLine1 = "No updates";
+            // 
+            // labelUpdate2
+            // 
+            this.labelUpdate2.ImageSmall = null;
+            this.labelUpdate2.TextLine1 = " ";
+            // 
+            // kryptonRibbonGroup7
+            // 
+            this.kryptonRibbonGroup7.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup7.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple12});
+            this.kryptonRibbonGroup7.TextLine1 = "Workspace";
+            // 
+            // kryptonRibbonGroupTriple12
+            // 
+            this.kryptonRibbonGroupTriple12.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.saveWorkspace,
+            this.loadWorkspace});
+            // 
+            // saveWorkspace
+            // 
+            this.saveWorkspace.ImageLarge = ((System.Drawing.Image)(resources.GetObject("saveWorkspace.ImageLarge")));
+            this.saveWorkspace.TextLine1 = "Save ";
+            this.saveWorkspace.ToolTipTitle = "If you save your workspace as workspace.xml it will be reloaded after restart.";
+            this.saveWorkspace.Click += new System.EventHandler(this.saveWorkspace_Click);
+            // 
+            // loadWorkspace
+            // 
+            this.loadWorkspace.ImageLarge = ((System.Drawing.Image)(resources.GetObject("loadWorkspace.ImageLarge")));
+            this.loadWorkspace.TextLine1 = "Load";
+            this.loadWorkspace.Click += new System.EventHandler(this.loadWorkspace_Click);
+            // 
+            // kryptonRibbonTab3
+            // 
+            this.kryptonRibbonTab3.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup9});
+            this.kryptonRibbonTab3.Text = "Catch Gallery";
+            this.kryptonRibbonTab3.Visible = false;
+            // 
+            // kryptonRibbonGroup9
+            // 
+            this.kryptonRibbonGroup9.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup9.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple13,
+            this.kryptonRibbonGroupSeparator1,
+            this.kryptonRibbonGroupTriple14});
+            this.kryptonRibbonGroup9.TextLine1 = "Catch of the day";
+            // 
+            // kryptonRibbonGroupTriple13
+            // 
+            this.kryptonRibbonGroupTriple13.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.labelCOD});
+            // 
+            // labelCOD
+            // 
+            this.labelCOD.TextLine1 = "None";
+            // 
+            // kryptonRibbonGroupTriple14
+            // 
+            this.kryptonRibbonGroupTriple14.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.labelCODCP,
+            this.labelCODIV,
+            this.labelCODLevel});
+            this.kryptonRibbonGroupTriple14.MaximumSize = ComponentFactory.Krypton.Ribbon.GroupItemSize.Medium;
+            // 
+            // labelCODCP
+            // 
+            this.labelCODCP.ImageSmall = ((System.Drawing.Image)(resources.GetObject("labelCODCP.ImageSmall")));
+            this.labelCODCP.TextLine1 = "CP";
+            this.labelCODCP.TextLine2 = "0";
+            // 
+            // labelCODIV
+            // 
+            this.labelCODIV.ImageSmall = ((System.Drawing.Image)(resources.GetObject("labelCODIV.ImageSmall")));
+            this.labelCODIV.TextLine1 = "IV";
+            this.labelCODIV.TextLine2 = "0%";
+            // 
+            // labelCODLevel
+            // 
+            this.labelCODLevel.ImageSmall = ((System.Drawing.Image)(resources.GetObject("labelCODLevel.ImageSmall")));
+            this.labelCODLevel.TextLine1 = "LV";
+            this.labelCODLevel.TextLine2 = "0";
+            // 
+            // kryptonRibbonTab4
+            // 
+            this.kryptonRibbonTab4.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup6});
+            this.kryptonRibbonTab4.Text = "Actions";
+            // 
+            // kryptonRibbonGroup6
+            // 
+            this.kryptonRibbonGroup6.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup6.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple11});
+            this.kryptonRibbonGroup6.TextLine1 = "Actions";
+            // 
+            // kryptonRibbonGroupTriple11
+            // 
+            this.kryptonRibbonGroupTriple11.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.snipeButton,
+            this.useIncenseButton,
+            this.useLuckyEgg});
+            // 
+            // snipeButton
+            // 
+            this.snipeButton.ImageLarge = ((System.Drawing.Image)(resources.GetObject("snipeButton.ImageLarge")));
+            this.snipeButton.TextLine1 = "Snipe";
+            this.snipeButton.Visible = false;
+            this.snipeButton.Click += new System.EventHandler(this.snipeButton_Click);
+            // 
+            // useIncenseButton
+            // 
+            this.useIncenseButton.ImageLarge = ((System.Drawing.Image)(resources.GetObject("useIncenseButton.ImageLarge")));
+            this.useIncenseButton.ImageSmall = ((System.Drawing.Image)(resources.GetObject("useIncenseButton.ImageSmall")));
+            this.useIncenseButton.TextLine1 = "Use ";
+            this.useIncenseButton.TextLine2 = "Incense";
+            this.useIncenseButton.Click += new System.EventHandler(this.kryptonRibbonGroupButton4_Click);
+            // 
+            // useLuckyEgg
+            // 
+            this.useLuckyEgg.ImageLarge = ((System.Drawing.Image)(resources.GetObject("useLuckyEgg.ImageLarge")));
+            this.useLuckyEgg.TextLine1 = "Use ";
+            this.useLuckyEgg.TextLine2 = "Lucky egg";
+            this.useLuckyEgg.Click += new System.EventHandler(this.useLuckyEgg_Click);
+            // 
+            // kryptonRibbonTab5
+            // 
+            this.kryptonRibbonTab5.Text = "Settings";
+            this.kryptonRibbonTab5.Visible = false;
             // 
             // kryptonRibbonTab1
             // 
@@ -1039,17 +1900,41 @@
             this.kryptonPage15.ToolTipTitle = "Page ToolTip";
             this.kryptonPage15.UniqueName = "437842EEE70849DAB29E628DE3FE4972";
             // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.DefaultExt = "xml";
+            this.saveFileDialog.FileName = "workspace.xml";
+            this.saveFileDialog.Filter = "XML files|*.xml";
+            this.saveFileDialog.Title = "Save Workspace Layout";
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.DefaultExt = "xml";
+            this.openFileDialog.FileName = "workspace.xml";
+            this.openFileDialog.Filter = "XML files|*.xml";
+            this.openFileDialog.Title = "Load Workspace Layout";
+            // 
+            // powerUpMAXToolStripMenuItem
+            // 
+            this.powerUpMAXToolStripMenuItem.Name = "powerUpMAXToolStripMenuItem";
+            this.powerUpMAXToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.powerUpMAXToolStripMenuItem.Text = "Power Up MAX";
+            this.powerUpMAXToolStripMenuItem.Click += new System.EventHandler(this.powerUpMAXToolStripMenuItem_Click);
+            // 
             // PokeGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1164, 746);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1588, 746);
             this.Controls.Add(this.workspaceDashboard);
             this.Controls.Add(this.ribbonMain);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PokeGUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pokemon GO - GUI v0.3.1 - Necrobot v0.8.5";
+            this.Text = "Pokemon GO - GUI v{version} - Necrobot v{necrobotversion}";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell4)).EndInit();
             this.kryptonWorkspaceCell4.ResumeLayout(false);
@@ -1064,23 +1949,19 @@
             this.contextPokemon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage2)).EndInit();
             this.kryptonPage2.ResumeLayout(false);
-            this.kryptonPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).EndInit();
             this.kryptonPage1.ResumeLayout(false);
-            this.kryptonPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage7)).EndInit();
             this.kryptonPage7.ResumeLayout(false);
-            this.kryptonPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell2)).EndInit();
             this.kryptonWorkspaceCell2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage4)).EndInit();
             this.kryptonPage4.ResumeLayout(false);
-            this.kryptonPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell3)).EndInit();
             this.kryptonWorkspaceCell3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage10)).EndInit();
             this.kryptonPage10.ResumeLayout(false);
+            this.contextInventory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage13)).EndInit();
             this.kryptonPage13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonWorkspaceCell5)).EndInit();
@@ -1091,6 +1972,12 @@
             this.kryptonWorkspaceCell6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage11)).EndInit();
             this.kryptonPage11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage5)).EndInit();
+            this.kryptonPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage16)).EndInit();
+            this.kryptonPage16.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pageLogging)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage14)).EndInit();
@@ -1117,7 +2004,6 @@
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage7;
         private ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence kryptonWorkspaceSequence2;
         private ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell kryptonWorkspaceCell2;
-        private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage3;
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage4;
         private ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell kryptonWorkspaceCell3;
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage6;
@@ -1138,11 +2024,11 @@
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab2;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton4;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton5;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton6;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelPokemonCount;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelItemCount;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelEggCount;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton9;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelPokedex;
         private System.Windows.Forms.RichTextBox textLog;
         private System.Windows.Forms.WebBrowser webMap;
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage9;
@@ -1167,13 +2053,8 @@
         private System.Windows.Forms.ToolStripMenuItem evolveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transferToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem powerUpToolStripMenuItem;
-        private System.Windows.Forms.Label labelTransfers;
-        private System.Windows.Forms.Label labelEvolves;
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage13;
-        private System.Windows.Forms.Label labelPokemon;
         private ComponentFactory.Krypton.Toolkit.ButtonSpecAny btnRefresh;
-        public ComponentFactory.Krypton.Toolkit.KryptonWrapLabel labelNext;
-        private ComponentFactory.Krypton.Toolkit.KryptonWrapLabel labelStops;
         private ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell kryptonWorkspaceCell5;
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage14;
         private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage15;
@@ -1205,6 +2086,86 @@
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup4;
         private System.Windows.Forms.ListView listEggs;
         private System.Windows.Forms.ImageList imagesEgg;
+        private System.Windows.Forms.ColumnHeader columnMove1;
+        private System.Windows.Forms.ColumnHeader columnMove2;
+        private System.Windows.Forms.ColumnHeader columnCaught;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage5;
+        private System.Windows.Forms.ListView listPokemonStats;
+        private System.Windows.Forms.ImageList imagesPokemon25;
+        private ComponentFactory.Krypton.Navigator.KryptonPage kryptonPage16;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ImageList iamgesPokemon100;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup6;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple11;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton snipeButton;
+        private System.Windows.Forms.ToolStripMenuItem renameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addStatisticsPageToolStripMenuItem;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup7;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple12;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton saveWorkspace;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton loadWorkspace;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.ListView listCatches;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader17;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.ColumnHeader columnHeader19;
+        private System.Windows.Forms.ColumnHeader columnHeader21;
+        private System.Windows.Forms.ColumnHeader columnHeader22;
+        private System.Windows.Forms.ColumnHeader columnHeader24;
+        private System.Windows.Forms.ColumnHeader columnHeader23;
+        private ComponentFactory.Krypton.Toolkit.ButtonSpecAny btnClearLogs;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup8;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup9;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple13;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelCOD;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple14;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelCODCP;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelCODIV;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelCODLevel;
+        private System.Windows.Forms.ListView listTransfers;
+        private System.Windows.Forms.ListView listEvolutions;
+        private System.Windows.Forms.ListView listPokestops;
+        private System.Windows.Forms.ColumnHeader columnHeader20;
+        private System.Windows.Forms.ColumnHeader columnHeader25;
+        private System.Windows.Forms.ColumnHeader columnHeader26;
+        private System.Windows.Forms.ColumnHeader columnHeader27;
+        private System.Windows.Forms.ColumnHeader columnHeader28;
+        private System.Windows.Forms.ColumnHeader columnHeader31;
+        private System.Windows.Forms.ColumnHeader columnHeader32;
+        private System.Windows.Forms.ColumnHeader columnHeader29;
+        private System.Windows.Forms.ColumnHeader columnHeader30;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple15;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelUpdate2;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab3;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab4;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab5;
+        internal ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelNext;
+        internal ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton labelUpdate;
+        private System.Windows.Forms.ContextMenuStrip contextInventory;
+        private System.Windows.Forms.ToolStripMenuItem disposechooseAmountToolStripMenuItem;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton useIncenseButton;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton useLuckyEgg;
+        private System.Windows.Forms.ToolStripMenuItem favoriteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem powerUpMAXToolStripMenuItem;
     }
 }
 
